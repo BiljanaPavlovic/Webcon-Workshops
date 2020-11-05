@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer</title>
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+        header,
+        footer{
+            background: orangered;
+            padding:30px;
+            color: white;
+            text-align: center;
+        }
+        .left,
+        .right{
+            width: 20%;
+            background: lightgray;
+            padding: 30px;
+            height: 80vh;
+            float: left;
+            background: navy;
+        }
+        section{
+            width: 60%;
+            padding: 30px;
+            height: 80vh;
+            float: left;
+        }
+        main::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        Header - Zaglavlje
+    </header>
+
+    <main>
+
+        <aside class="left">
+            Levi sidebar
+        </aside>
+        <section>
+            Glavni sadrzaj
+        </section>
+        
+        <aside class="right">
+            Desni sidebar
+        </aside>
+        
+    </main>
+
+    <footer>
+        Footer - Podnozje
+    </footer>
+</body>
+</html>

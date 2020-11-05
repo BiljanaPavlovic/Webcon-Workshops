@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear svojstvo</title>
+    <style>
+        section img:nth-child(1){
+            float: left;
+        }
+        section img:nth-child(2) {
+            float:right
+        }
+       section::after{
+           content: "";
+           display: block;
+           clear: both;
+       }
+    </style>
+</head>
+<body>
+    <section>
+        <img src="levo.jpg" style= "width: 400px; height: 300px;"alt="">
+        <img src="desno.jpg" style= "width: 400px; height: 300px;" alt="">
+    </section>
+    <p>Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Tempore, esse.
+         Doloremque itaque exercitationem
+          quidem asperiores porro earum 
+          laboriosam saepe ad et ipsam quisquam
+           harum aliquid minus unde minima, 
+           illum delectus aperiam eum tempore 
+           sed? Tenetur blanditiis atque dolor
+            rem quibusdam saepe, molestiae et 
+            exercitationem obcaecati ducimus
+             illum officiis voluptatum dolore 
+             hic assumenda unde vero aut. Quod
+             ipsum doloremque corrupti nisi
+              quisquam consequuntur laboriosam 
+              distinctio inventore. Fugiat 
+              tempora explicabo suscipit pariatur
+               architecto at perspiciatis
+                doloribus officiis fuga ut.
+                 Cumque vero aliquid dolore 
+                 voluptatem voluptate quibusdam 
+                 quam consectetur, consequuntur 
+                 rerum nam voluptatibus esse.
+                 Vel perferendis dolorum, unde
+                  architecto 
+        cupiditate repellat dolores quaerat.</p>
+</body>
+</html>
